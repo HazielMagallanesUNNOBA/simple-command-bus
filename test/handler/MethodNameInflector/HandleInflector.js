@@ -1,7 +1,7 @@
 /* global it, describe */
 import { expect } from 'chai';
-import Command from '../../../src/Command';
-import HandleInflector from '../../../src/handler/MethodNameInflector/HandleInflector';
+import Command from '../../../src/Command.js';
+import HandleInflector from '../../../src/handler/MethodNameInflector/HandleInflector.js';
 
 describe('Testing HandleInflector', () => {
 	it('Testing valid handle method', () => {

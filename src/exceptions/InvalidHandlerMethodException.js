@@ -1,4 +1,4 @@
-import createException from './createException';
+import createException from './createException.js';
 
 const InvalidHandlerMethodException = createException('InvalidHandlerMethodException', {
 	message: 'Invalid handler method.'

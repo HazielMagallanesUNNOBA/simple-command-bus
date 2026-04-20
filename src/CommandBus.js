@@ -1,7 +1,7 @@
-import Middleware from './Middleware';
-import Command from './Command';
-import InvalidMiddlewareException from './exceptions/InvalidMiddlewareException';
-import InvalidCommandException from './exceptions/InvalidCommandException';
+import Middleware from './Middleware.js';
+import Command from './Command.js';
+import InvalidMiddlewareException from './exceptions/InvalidMiddlewareException.js';
+import InvalidCommandException from './exceptions/InvalidCommandException.js';
 
 // Intend to define private property
 const stack = Symbol('stack');
@@ -9,7 +9,7 @@ const stack = Symbol('stack');
 /**
  * Bus that run and handle commands through middlewares
  */
-export default class commandBus {
+export default class CommandBus {
 	constructor(middlewares = []) {
 		this[stack] = middlewares;
 	}

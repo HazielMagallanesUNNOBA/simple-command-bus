@@ -1,8 +1,8 @@
-import { isFunction } from 'lodash';
-import CommandNameExtractor from './CommandNameExtractor/CommandNameExtractor';
-import MethodNameInflector from './MethodNameInflector/MethodNameInflector';
-import HandlerLocator from './Locator/HandlerLocator';
-import Middleware from '../Middleware';
+import lod from 'lodash';
+import CommandNameExtractor from './CommandNameExtractor/CommandNameExtractor.js';
+import MethodNameInflector from './MethodNameInflector/MethodNameInflector.js';
+import HandlerLocator from './Locator/HandlerLocator.js';
+import Middleware from '../Middleware.js';
 
 // Intend to define private property
 const _commandNameExtractor = Symbol('commandNameExtractor');
@@ -47,7 +47,7 @@ export default class CommandHandlerMiddleware extends Middleware {
 			methodName = this[_methodNameInflector].inflect(commandName, handler);
 		}
 
-		if (handler && isFunction(handler[methodName])) {
+		if (handler && lod.isFunction(handler[methodName])) {
 			result = handler[methodName].call(handler, command);
 		}
 

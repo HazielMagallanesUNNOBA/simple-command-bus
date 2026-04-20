@@ -1,5 +1,5 @@
-import { isObject } from 'lodash';
-import createException from './createException';
+import lod from 'lodash';
+import createException from './createException.js';
 
 const InvalidCommandException = createException('InvalidCommandException', {
 	message: 'Invalid Command'
@@ -8,7 +8,7 @@ const InvalidCommandException = createException('InvalidCommandException', {
 InvalidCommandException.forCommand = (command) => {
 	let message = null;
 
-	if (isObject(command)) {
+	if (lod.isObject(command)) {
 		message = `Command ${command.constructor.name} is invalid. It must extend from Command.`;
 	}
 

@@ -1,5 +1,5 @@
-import { isString } from 'lodash';
-import createException from './createException';
+import lod from 'lodash';
+import createException from './createException.js';
 
 const MissingHandlerException = createException('MissingHandlerException', {
 	message: 'Invalid Command'
@@ -8,7 +8,7 @@ const MissingHandlerException = createException('MissingHandlerException', {
 MissingHandlerException.forCommand = (commandName) => {
 	let message = null;
 
-	if (isString(commandName)) {
+	if (lod.isString(commandName)) {
 		message = `There is no a handler for "${commandName}" Command.`;
 	}
 

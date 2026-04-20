@@ -1,11 +1,11 @@
 /* global it, beforeEach, describe */
 import { expect } from 'chai';
-import CommandBus from '../../src/CommandBus';
-import Command from '../../src/Command';
-import CommandHandlerMiddleware from '../../src/handler/CommandHandlerMiddleware';
-import ClassNameExtractor from '../../src/handler/CommandNameExtractor/ClassNameExtractor';
-import HandleInflector from '../../src/handler/MethodNameInflector/HandleInflector';
-import InMemoryLocator from '../../src/handler/Locator/InMemoryLocator';
+import CommandBus from '../../src/CommandBus.js';
+import Command from '../../src/Command.js';
+import CommandHandlerMiddleware from '../../src/handler/CommandHandlerMiddleware.js';
+import ClassNameExtractor from '../../src/handler/CommandNameExtractor/ClassNameExtractor.js';
+import HandleInflector from '../../src/handler/MethodNameInflector/HandleInflector.js';
+import InMemoryLocator from '../../src/handler/Locator/InMemoryLocator.js';
 
 const consoleMock = { log: () => null };
 

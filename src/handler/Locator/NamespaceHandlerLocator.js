@@ -1,7 +1,7 @@
-import { isString, isFunction, isDirectory, walkSync } from '../../utils';
-import HandlerLocator from './HandlerLocator';
-import MissingHandlerException from '../../exceptions/MissingHandlerException';
-import InvalidCommandException from '../../exceptions/InvalidCommandException';
+import { isString, isFunction, isDirectory, walkSync } from '../../utils.js';
+import HandlerLocator from './HandlerLocator.js';
+import MissingHandlerException from '../../exceptions/MissingHandlerException.js';
+import InvalidCommandException from '../../exceptions/InvalidCommandException.js';
 
 export default class NamespaceHandlerLocator extends HandlerLocator {
 	constructor(handlersPath) {

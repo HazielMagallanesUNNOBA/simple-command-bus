@@ -1,6 +1,6 @@
-import { isFunction } from 'lodash';
-import MethodNameInflector from './MethodNameInflector';
-import InvalidHandlerMethodException from '../../exceptions/InvalidHandlerMethodException';
+import lod from 'lodash';
+import MethodNameInflector from './MethodNameInflector.js';
+import InvalidHandlerMethodException from '../../exceptions/InvalidHandlerMethodException.js';
 
 export default class HandleInflector extends MethodNameInflector {
 	constructor(methodName) {
@@ -9,7 +9,7 @@ export default class HandleInflector extends MethodNameInflector {
 	}
 
 	inflect(commandName, handler) {
-		if (isFunction(handler[this.methodName]) === false) {
+		if (lod.isFunction(handler[this.methodName]) === false) {
 			InvalidHandlerMethodException.forMethod(this.methodName);
 		}
 

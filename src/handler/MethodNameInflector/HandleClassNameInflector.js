@@ -1,4 +1,4 @@
-import MethodNameInflector from './MethodNameInflector';
+import MethodNameInflector from './MethodNameInflector.js';
 
 export default class HandleClassNameInflector extends MethodNameInflector {
 

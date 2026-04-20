@@ -3,6 +3,7 @@
   "version": "1.0.7",
   "description": "Simple Command Bus",
   "main": "lib/index.js",
+  "type": "module",
   "scripts": {
     "build": "babel src/ -d lib/",
     "build:watch": "babel --watch src/ -d lib/",
@@ -33,14 +34,14 @@
     "@babel/node": "^7.2.2",
     "@babel/preset-env": "^7.4.4",
     "@babel/preset-flow": "^7.0.0",
-    "chai": "^4.1.2",
-    "codecov": "^3.0.1",
+    "chai": "^6.2.2",
+    "codecov": "^3.8.3",
     "eslint-config-airbnb-standard": "^3.0.1",
-    "flow-bin": "^0.70.0",
-    "mocha": "^5.1.1",
+    "flow-bin": "^0.309.0",
+    "mocha": "^11.7.5",
     "mock-require": "^3.0.2",
-    "nyc": "^13.3.0",
-    "sinon": "^5.0.1"
+    "nyc": "^18.0.0",
+    "sinon": "^21.1.2"
   },
   "dependencies": {
     "lodash": "^4.17.5"
