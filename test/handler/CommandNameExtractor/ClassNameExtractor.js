@@ -1,7 +1,7 @@
 /* global it, describe */
 import { expect } from 'chai';
-import Command from '../../../src/Command.js';
-import ClassNameExtractor from '../../../src/handler/CommandNameExtractor/ClassNameExtractor.js';
+import Command from '../../../src/Command';
+import ClassNameExtractor from '../../../src/handler/CommandNameExtractor/ClassNameExtractor';
 
 describe('Testing ClassNameExtractor', () => {
 	it('Extract name from command', () => {

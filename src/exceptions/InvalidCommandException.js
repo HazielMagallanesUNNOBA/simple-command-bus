@@ -1,5 +1,5 @@
 import lod from 'lodash';
-import createException from './createException.js';
+import createException from './createException';
 
 const InvalidCommandException = createException('InvalidCommandException', {
 	message: 'Invalid Command'

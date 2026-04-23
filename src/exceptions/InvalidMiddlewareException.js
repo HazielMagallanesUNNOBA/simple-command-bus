@@ -1,5 +1,5 @@
-import createException from './createException.js';
 import lod from 'lodash';
+import createException from './createException';
 
 const InvalidMiddlewareException = createException('InvalidMiddlewareException', {
 	message: 'Invalid Middleware'

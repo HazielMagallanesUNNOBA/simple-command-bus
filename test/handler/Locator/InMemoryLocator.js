@@ -1,8 +1,8 @@
 /* global it, describe */
 import { expect } from 'chai';
 import { isObject } from 'lodash';
-import Command from '../../../src/Command.js';
-import InMemoryLocator from '../../../src/handler/Locator/InMemoryLocator.js';
+import Command from '../../../src/Command';
+import InMemoryLocator from '../../../src/handler/Locator/InMemoryLocator';
 
 describe('Testing InMemoryLocator', () => {
 	it('Check handler function for command', () => {

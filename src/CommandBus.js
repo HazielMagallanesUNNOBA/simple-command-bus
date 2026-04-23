@@ -1,7 +1,7 @@
-import Middleware from './Middleware.js';
-import Command from './Command.js';
-import InvalidMiddlewareException from './exceptions/InvalidMiddlewareException.js';
-import InvalidCommandException from './exceptions/InvalidCommandException.js';
+import Middleware from './Middleware';
+import Command from './Command';
+import InvalidMiddlewareException from './exceptions/InvalidMiddlewareException';
+import InvalidCommandException from './exceptions/InvalidCommandException';
 
 // Intend to define private property
 const stack = Symbol('stack');

@@ -1,6 +1,6 @@
 import lod from 'lodash';
-import MethodNameInflector from './MethodNameInflector.js';
-import InvalidHandlerMethodException from '../../exceptions/InvalidHandlerMethodException.js';
+import MethodNameInflector from './MethodNameInflector';
+import InvalidHandlerMethodException from '../../exceptions/InvalidHandlerMethodException';
 
 export default class HandleInflector extends MethodNameInflector {
 	constructor(methodName) {

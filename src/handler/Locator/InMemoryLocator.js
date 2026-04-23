@@ -1,7 +1,7 @@
 import lod from 'lodash';
-import HandlerLocator from './HandlerLocator.js';
-import MissingHandlerException from '../../exceptions/MissingHandlerException.js';
-import InvalidCommandException from '../../exceptions/InvalidCommandException.js';
+import HandlerLocator from './HandlerLocator';
+import MissingHandlerException from '../../exceptions/MissingHandlerException';
+import InvalidCommandException from '../../exceptions/InvalidCommandException';
 
 export default class InMemoryLocator extends HandlerLocator {
 	constructor(handlers = {}) {

@@ -1,6 +1,6 @@
 /* global it, describe */
 import { expect } from 'chai';
-import Middleware from '../src/Middleware.js';
+import Middleware from '../src/Middleware';
 
 describe('Testing Abstract Middleware', () => {
 	it('Abstract instance thrown an error', () => {
