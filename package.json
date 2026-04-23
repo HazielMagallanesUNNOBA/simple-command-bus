@@ -13,8 +13,8 @@
     }
   },
   "scripts": {
-    "build": "tsup src/index.js --format cjs,esm --dts --clean --out-dir lib",
-    "build:watch": "tsup src/index.js --format cjs,esm --dts --clean --out-dir lib --watch",
+    "build": "tsup src/index.js --format cjs,esm --clean --out-dir lib && cp index.d.ts lib/index.d.ts",
+    "build:watch": "tsup src/index.js --format cjs,esm --clean --out-dir lib --watch",
     "typecheck": "flow check",
     "test": "mocha --recursive --require @babel/register",
     "test:coverage": "nyc --reporter=html --reporter=text mocha --recursive --require @babel/register",
